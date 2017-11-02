@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					BD56E37A1FAB945D00801492 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8B6QQYRYHW;
+						DevelopmentTeam = A8BKZ7438M;
 						ProvisioningStyle = Automatic;
 					};
 					BD56E3941FAB945D00801492 = {
@@ -419,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8B6QQYRYHW;
+				DEVELOPMENT_TEAM = A8BKZ7438M;
 				INFOPLIST_FILE = newGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -433,7 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8B6QQYRYHW;
+				DEVELOPMENT_TEAM = A8BKZ7438M;
 				INFOPLIST_FILE = newGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
