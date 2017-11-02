@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BD56E37F1FAB945D00801492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56E37E1FAB945D00801492 /* AppDelegate.swift */; };
-		BD56E3811FAB945D00801492 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD56E3801FAB945D00801492 /* GameScene.sks */; };
-		BD56E3831FAB945D00801492 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD56E3821FAB945D00801492 /* Actions.sks */; };
 		BD56E3851FAB945D00801492 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56E3841FAB945D00801492 /* GameScene.swift */; };
 		BD56E3871FAB945D00801492 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56E3861FAB945D00801492 /* GameViewController.swift */; };
 		BD56E38A1FAB945D00801492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD56E3881FAB945D00801492 /* Main.storyboard */; };
@@ -39,8 +37,6 @@
 /* Begin PBXFileReference section */
 		BD56E37B1FAB945D00801492 /* newGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD56E37E1FAB945D00801492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD56E3801FAB945D00801492 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		BD56E3821FAB945D00801492 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		BD56E3841FAB945D00801492 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BD56E3861FAB945D00801492 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BD56E3891FAB945D00801492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				BD56E37E1FAB945D00801492 /* AppDelegate.swift */,
-				BD56E3801FAB945D00801492 /* GameScene.sks */,
-				BD56E3821FAB945D00801492 /* Actions.sks */,
 				BD56E3841FAB945D00801492 /* GameScene.swift */,
 				BD56E3861FAB945D00801492 /* GameViewController.swift */,
 				BD56E3881FAB945D00801492 /* Main.storyboard */,
@@ -202,6 +196,7 @@
 				TargetAttributes = {
 					BD56E37A1FAB945D00801492 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8B6QQYRYHW;
 						ProvisioningStyle = Automatic;
 					};
 					BD56E3941FAB945D00801492 = {
@@ -242,10 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD56E38A1FAB945D00801492 /* Main.storyboard in Resources */,
-				BD56E3811FAB945D00801492 /* GameScene.sks in Resources */,
 				BD56E38C1FAB945D00801492 /* Assets.xcassets in Resources */,
 				BD56E38F1FAB945D00801492 /* LaunchScreen.storyboard in Resources */,
-				BD56E3831FAB945D00801492 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B6QQYRYHW;
 				INFOPLIST_FILE = newGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B6QQYRYHW;
 				INFOPLIST_FILE = newGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -521,6 +516,7 @@
 				BD56E3AB1FAB945D00801492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD56E3AC1FAB945D00801492 /* Build configuration list for PBXNativeTarget "newGameTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +525,7 @@
 				BD56E3AE1FAB945D00801492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD56E3AF1FAB945D00801492 /* Build configuration list for PBXNativeTarget "newGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +534,7 @@
 				BD56E3B11FAB945D00801492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
