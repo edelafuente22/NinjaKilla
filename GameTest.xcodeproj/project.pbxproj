@@ -21,6 +21,8 @@
 		954267671FABB56B00560FF4 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 954267651FABB56B00560FF4 /* pew-pew-lei.caf */; };
 		95497D801FAC3507000E5CE0 /* mainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497D7F1FAC3507000E5CE0 /* mainMenuScene.swift */; };
 		95497D821FAC3651000E5CE0 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 95497D811FAC3651000E5CE0 /* MainMenu.sks */; };
+		F51D4D831FACE45F000133A7 /* desdemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F51D4D821FACE45F000133A7 /* desdemon.ttf */; };
+		F51D4D871FACEB75000133A7 /* mk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F51D4D861FACEB75000133A7 /* mk.mp3 */; };
 		F5CC50911FAC0BB500AB13CA /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = F5CC50901FAC0BB500AB13CA /* GameOver.sks */; };
 		F5CC50951FAC19FC00AB13CA /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC50941FAC19FC00AB13CA /* GameOver.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		954267651FABB56B00560FF4 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		95497D7F1FAC3507000E5CE0 /* mainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainMenuScene.swift; sourceTree = "<group>"; };
 		95497D811FAC3651000E5CE0 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		F51D4D821FACE45F000133A7 /* desdemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = desdemon.ttf; sourceTree = "<group>"; };
+		F51D4D861FACEB75000133A7 /* mk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mk.mp3; sourceTree = "<group>"; };
 		F5CC50901FAC0BB500AB13CA /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		F5CC50941FAC19FC00AB13CA /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 		950103611FAB91C10079B67C /* GameTest */ = {
 			isa = PBXGroup;
 			children = (
+				F51D4D811FACE440000133A7 /* Fonts */,
 				954267631FABB56B00560FF4 /* Sounds */,
 				95497D831FAC385F000E5CE0 /* Scenes */,
 				95497D841FAC3891000E5CE0 /* SceneClasses */,
@@ -150,6 +155,7 @@
 		954267631FABB56B00560FF4 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F51D4D861FACEB75000133A7 /* mk.mp3 */,
 				954267641FABB56B00560FF4 /* background-music-aac.caf */,
 				954267651FABB56B00560FF4 /* pew-pew-lei.caf */,
 			);
@@ -174,6 +180,14 @@
 				95497D7F1FAC3507000E5CE0 /* mainMenuScene.swift */,
 			);
 			name = SceneClasses;
+			sourceTree = "<group>";
+		};
+		F51D4D811FACE440000133A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F51D4D821FACE45F000133A7 /* desdemon.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = SF5MC74SH2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					950103781FAB91C20079B67C = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -287,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				954267671FABB56B00560FF4 /* pew-pew-lei.caf in Resources */,
+				F51D4D871FACEB75000133A7 /* mk.mp3 in Resources */,
 				95497D821FAC3651000E5CE0 /* MainMenu.sks in Resources */,
 				F5CC50911FAC0BB500AB13CA /* GameOver.sks in Resources */,
+				F51D4D831FACE45F000133A7 /* desdemon.ttf in Resources */,
 				9501036E1FAB91C10079B67C /* Main.storyboard in Resources */,
 				950103651FAB91C10079B67C /* GameScene.sks in Resources */,
 				954267661FABB56B00560FF4 /* background-music-aac.caf in Resources */,
