@@ -54,7 +54,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let sequence = SKAction.sequence([SKAction.run(addMonster),SKAction.wait(forDuration:1.0)])
         
         run(
-            SKAction.sequence([SKAction.repeat(sequence,count: 20)]))
+            SKAction.sequence([SKAction.repeat(sequence,count: 20),SKAction.wait(forDuration:4.0) ,SKAction.run{
+                self.victory()
+                }]))
 
     
         
@@ -88,7 +90,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     //Vlad end
     
-    
+    func victory(){
+        if let scene = VictoryScene(fileNamed: "Victory") {
+            scene.scaleMode = .aspectFill
+            
+            view?.presentScene(scene)
+        }
+    }
     
     func gameOver(){
         gameBackgroundMusic?.stop()
