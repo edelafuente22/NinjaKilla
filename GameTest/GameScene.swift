@@ -46,6 +46,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.position = CGPoint(x: (-(self.scene?.size.width)!/2)+650   ,y: ((self.scene?.size.height)!/2)-50)
         self.addChild(scoreLabel)
         
+        levelLabel.text = ""
+        levelLabel.fontSize = 100
+        scoreLabel.zPosition = 1.0
+        self.addChild(levelLabel)
+        
         let sequence = SKAction.sequence([SKAction.run(addMonster),SKAction.wait(forDuration:1.0)])
         
         run(
@@ -123,7 +128,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
         }
         else{
-        
+            
         }
         
     }
@@ -166,6 +171,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.gameOver()
             }
             else{
+
             }
             }
             ]))
