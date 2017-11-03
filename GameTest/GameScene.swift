@@ -9,9 +9,13 @@
 import SpriteKit
 import GameplayKit
 import CoreMotion
-
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    //vlad
+    var gameBackgroundMusic: AVAudioPlayer?
+    
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
@@ -23,6 +27,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var player = SKSpriteNode(imageNamed: "player")
     
     override func didMove(to view: SKView) {
+        
+        
+        
         physicsWorld.contactDelegate = self
         myLives.text = "Lives: 5"
         myLives.fontSize = 30
@@ -46,11 +53,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             })
             
         }
-        
+        //vlad
+        do {
+        gameBackgroundMusic=try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath:Bundle.main.path(forResource: "mk", ofType: "mp3")!))
+        gameBackgroundMusic?.prepareToPlay()
+        play()
+        }
+        catch{
+            print(error)
+        }
+        //vlad end
         
         
         
     }
+    //Vlad
+    func play(){
+         gameBackgroundMusic?.play()
+        
+    }
+    //Vlad end
     
     
     
@@ -63,6 +85,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
                 view?.presentScene(scene)
             }
+        
         }
     
     
