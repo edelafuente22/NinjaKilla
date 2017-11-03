@@ -77,7 +77,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     func gameOver(){
-        
+        gameBackgroundMusic?.stop()
             if let scene = GameOver(fileNamed: "GameOver") {
 
                 scene.scaleMode = .aspectFill

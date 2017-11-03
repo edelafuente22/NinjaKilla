@@ -13,7 +13,6 @@ import SpriteKit
 class GameOver: SKScene {
     
     override func didMove(to view: SKView) {
-        print("got here")
     }
 
     
