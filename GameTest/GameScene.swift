@@ -18,6 +18,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let manager = CMMotionManager()
     var livesleft = 5
     var myLives: SKLabelNode = SKLabelNode(fontNamed: "Arial")
+    var myScore = 0
+    var scoreLabel: SKLabelNode = SKLabelNode(fontNamed: "Arial")
+    var levelLabel: SKLabelNode = SKLabelNode(fontNamed: "Arial")
 
     
     var player = SKSpriteNode(imageNamed: "player")
@@ -29,6 +32,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         myLives.zPosition = 1.0
         myLives.position = CGPoint(x: (-(self.scene?.size.width)!/2)+60   ,y: ((self.scene?.size.height)!/2)-50)
         self.addChild(myLives)
+        
+        scoreLabel.text = "Score:"+" "+" "+"0"
+        scoreLabel.fontSize = 30
+        scoreLabel.zPosition = 1.0
+        scoreLabel.position = CGPoint(x: (-(self.scene?.size.width)!/2)+650   ,y: ((self.scene?.size.height)!/2)-50)
+        self.addChild(scoreLabel)
         
         let sequence = SKAction.sequence([SKAction.run(addMonster),SKAction.wait(forDuration:1.0)])
         
@@ -78,10 +87,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             contactB.node?.xScale = 0
             contactB.node?.yScale = 0
             
+            myScore += 100
+            scoreLabel.text = "Score: \(myScore)"
+            
         }else if( (contactB.categoryBitMask == 2) && (contactB.categoryBitMask != 10)){
             
             contactA.node?.xScale = 0
             contactA.node?.yScale = 0
+            
+            myScore += 100
+            scoreLabel.text = "Score: \(myScore)"
             
         }
         else{
